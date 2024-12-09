@@ -1,0 +1,2 @@
+module FoodNotesHelper
+end

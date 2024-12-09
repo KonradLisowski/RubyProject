@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Notes</title>
+
+  <!-- Link to the stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h3>Food Notes Application</h3>
+
+  <!-- Food Name Input -->
+  <label for="food">Food Name:</label>
+  <input type="text" id="food" />
+  <br />
+
+  <!-- Note Input -->
+  <label for="note">Note:</label>
+  <textarea id="note"></textarea>
+  <br />
+
+  <!-- Button to add new note -->
+  <button onclick="createNote()">Add Note</button>
+
+  <h4>Saved Notes:</h4>
+  <!-- Display saved notes -->
+  <ul id="notes"></ul>
+
+  <!-- Barcode -->
+  <label for="barcode">Enter a Barcode:</label>
+  <input type="text" id="barcode" />
+  <br />
+
+  <!-- Button to fetch product data by barcode -->
+  <button onclick="fetchProductByBarcode()">Search Product</button>
+
+  <!-- Display name and ingredients -->
+  <div id="product-info">
+    <h4>Product Information</h4>
+    <div id="product-name"></div>
+    <div id="product-ingredients"></div>
+  </div>
+
+  <!-- Link to the JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
